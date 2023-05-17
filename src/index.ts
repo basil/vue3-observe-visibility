@@ -1,6 +1,6 @@
-function test(){
-    console.log('test');
-}
+import ObserveVisibility from './directives/observe-visibility'
 
-export default test;
-export { test };
+export default ObserveVisibility
+export {
+  ObserveVisibility,
+}

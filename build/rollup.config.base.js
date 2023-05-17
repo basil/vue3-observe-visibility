@@ -1,12 +1,17 @@
-import typescript from '@rollup/plugin-typescript';
+import typescript from "@rollup/plugin-typescript";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 const config = {
-  input: 'src/index.ts',
+  input: "src/index.ts",
   plugins: [
+    // nodeResolve(),
     typescript({
-      tsconfig: 'tsconfig.json',
+      tsconfig: "tsconfig.json",
     }),
   ],
+  watch: {
+    include: "src/**",
+  },
 };
 
 export default config;

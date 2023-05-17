@@ -5,6 +5,9 @@ const config = Object.assign({}, baseConfig, {
     file: "dist/index.umd.js",
     format: "umd",
     name: "VueObserverVisibility",
+    globals: {
+      vue: "Vue",
+    },
     exports: "named",
   },
 });

@@ -5,6 +5,9 @@ const config = Object.assign({}, baseConfig, {
     file: "dist/index.browser.js",
     format: "iife",
     name: "VueObserverVisibility",
+    globals: {
+      vue: "Vue",
+    },
     exports: "named",
   },
 });
