@@ -1,6 +1,9 @@
-import ObserveVisibility from './directives/observe-visibility'
+import ObserveVisibility from "./directives/observe-visibility";
+import { App } from "vue";
 
-export default ObserveVisibility
-export {
-  ObserveVisibility,
+export function install(app: App) {
+  app.directive("observe-visibility", ObserveVisibility);
 }
+
+export default ObserveVisibility;
+export { ObserveVisibility };

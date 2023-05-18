@@ -180,7 +180,7 @@
         },
       });
 
-      app.directive('observe-visibility', window.VueObserverVisibility.ObserveVisibility)
+      app.use(VueObserverVisibility)
 
       app.mount("#app");
     </script>

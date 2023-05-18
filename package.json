@@ -5,12 +5,10 @@
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "unpkg": "dist/index.browser.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "npm run build:es && npm run build:umd && npm run build:browser",
-    "build:es": "rollup -c build/rollup.config.es.js",
-    "build:umd": "rollup -c build/rollup.config.umd.js",
-    "build:browser": "rollup -c build/rollup.config.browser.js"
+    "build": "rollup -c rollup.config.js"
   },
   "keywords": [
     "vue3"
@@ -35,6 +33,7 @@
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-typescript": "^11.1.1",
     "rollup": "^3.22.0",
+    "rollup-plugin-dts": "^5.3.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4"
   }
