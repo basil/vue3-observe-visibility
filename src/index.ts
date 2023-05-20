@@ -5,5 +5,5 @@ export function install(app: App) {
   app.directive("observe-visibility", ObserveVisibility);
 }
 
-export default ObserveVisibility;
+export default { ObserveVisibility, install };
 export { ObserveVisibility };
