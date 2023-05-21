@@ -1,6 +1,6 @@
 {
   "name": "@uxieverity/vue3-observe-visibility",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect when an element is becoming visible or hidden on the page. ",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
